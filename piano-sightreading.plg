@@ -1,0 +1,18 @@
+ // create a new score
+Sibelius.New();
+score = Sibelius.ActiveScore;
+
+// create piano staves
+score.CreateInstrument("Piano");
+rightHand = score.NthStaff(1);
+leftHand = score.NthStaff(2);
+
+// add title, time signature, and key signature
+systemStaff = newscore.SystemStaff;
+firstBar = sys.NthBar(1);
+
+title = "Sight Reading Exercise #1";
+firstBar.AddText(0, title, "Title");
+
+firstBar.AddTimeSignature(4, 4);
+firstBar.AddKeySignature(2);
