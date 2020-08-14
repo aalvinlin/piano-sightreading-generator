@@ -8,8 +8,8 @@ rightHand = score.NthStaff(1);
 leftHand = score.NthStaff(2);
 
 // add title, time signature, and key signature
-systemStaff = newscore.SystemStaff;
-firstBar = sys.NthBar(1);
+systemStaff = score.SystemStaff;
+firstBar = systemStaff.NthBar(1);
 
 title = "Sight Reading Exercise #1";
 firstBar.AddText(0, title, "Title");
