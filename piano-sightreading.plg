@@ -66,3 +66,20 @@ notes_to_midi = CreateDictionary(
     "Cb", 11,
     "B#", 12
 );
+
+roman_numerals_to_interval = CreateDictionary(
+    "I", 0,
+    "i", 0,
+    "ii", 2,
+    "II", 2,
+    "iii", 4,
+    "III", 4,
+    "iv", 5,
+    "IV", 5,
+    "v", 7,
+    "V", 7,
+    "vi", 9,
+    "VI", 9,
+    "vii", 11,
+    "VII", 11
+);
