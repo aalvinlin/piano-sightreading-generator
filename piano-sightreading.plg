@@ -15,4 +15,4 @@ title = "Sight Reading Exercise #1";
 firstBar.AddText(0, title, "Title");
 
 firstBar.AddTimeSignature(4, 4, True, True);
-firstBar.AddKeySignature(2, True);
+firstBar.AddKeySignature(0, 2, True);
