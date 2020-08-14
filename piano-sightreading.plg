@@ -16,3 +16,6 @@ firstBar.AddText(0, title, "Title");
 
 firstBar.AddTimeSignature(4, 4, True, True);
 firstBar.AddKeySignature(0, 2, True);
+
+// score comes with 5 bars; add 11 bars to allow for AABA form, with each section 4 bars long
+score.AddBars(11);
