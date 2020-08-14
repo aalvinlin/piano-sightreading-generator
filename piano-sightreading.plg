@@ -1,4 +1,6 @@
- // create a new score
+// ===== SCORE CREATION =====
+
+// create a new score
 Sibelius.New();
 score = Sibelius.ActiveScore;
 
@@ -19,3 +21,24 @@ firstBar.AddKeySignature(0, 2, True);
 
 // score comes with 5 bars; add 11 bars to allow for AABA form, with each section 4 bars long
 score.AddBars(11);
+
+// ===== DATA FOR WORKING WITH NOTES AND MIDI =====
+notes_in_key = CreateDictionary(
+    "C", CreateSparseArray("C", "D", "E", "F", "G", "A", "B"),
+
+    "G", CreateSparseArray("G", "A", "B", "C", "D", "E", "F#"),
+    "D", CreateSparseArray("D", "E", "F#", "G", "A", "B", "C#"),
+    "A", CreateSparseArray("A", "B", "C#", "D", "E", "F#", "G#"),
+    "E", CreateSparseArray("E", "F#", "G#", "A", "B", "C#", "D#"),
+    "B", CreateSparseArray("B", "C#", "D#", "E", "F#", "G#", "A#"),
+    "F#", CreateSparseArray("F#", "G#", "A#", "B", "C#", "D#", "E#"),
+    "C#", CreateSparseArray("C#", "D#", "E#", "F#", "G#", "A#", "B#"),
+
+    "Cb", CreateSparseArray("Cb", "Db", "Eb", "Fb", "Gb", "Ab", "Bb"),
+    "Gb", CreateSparseArray("Gb", "Ab", "Bb", "C", "Db", "Eb", "Fb"),
+    "Db", CreateSparseArray("Db", "Eb", "F", "Gb", "Ab", "Bb", "C"),
+    "Ab", CreateSparseArray("C", "Db", "Eb", "F", "G", "Ab", "Bb"),
+    "Eb", CreateSparseArray("Eb", "F", "G", "Ab", "Bb", "C", "D"),
+    "Bb", CreateSparseArray("Bb", "C", "D", "Eb", "F", "G", "A"),
+    "F", CreateSparseArray("F", "G", "A", "Bb", "C", "D", "E")
+    );
