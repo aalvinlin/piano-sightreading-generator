@@ -83,3 +83,42 @@ roman_numerals_to_interval = CreateDictionary(
     "vii", 11,
     "VII", 11
 );
+
+// ===== Test harmony =====
+harmony_A = CreateSparseArray(
+    CreateSparseArray("I", Whole),
+    CreateSparseArray("IV", Whole),
+    CreateSparseArray("I", Whole),
+    CreateSparseArray("V", Whole)
+);
+
+harmony_A_prime = CreateSparseArray(
+    CreateSparseArray("I", Whole),
+    CreateSparseArray("IV", Whole),
+    CreateSparseArray("ii", Half),
+    CreateSparseArray("V", Half),
+    CreateSparseArray("I", Whole)
+);
+
+harmony_B = CreateSparseArray(
+    CreateSparseArray("V", Whole),
+    CreateSparseArray("I", Whole),
+    CreateSparseArray("V", Half),
+    CreateSparseArray("ii", Half),
+    CreateSparseArray("V", Whole)
+);
+
+harmony_A_double_prime = CreateSparseArray(
+    CreateSparseArray("I", Whole),
+    CreateSparseArray("IV", Whole),
+    CreateSparseArray("ii", Half),
+    CreateSparseArray("V", Half),
+    CreateSparseArray("I", Whole)
+);
+
+harmonies = CreateSparseArray(
+    harmony_A,
+    harmony_A_prime,
+    harmony_B,
+    harmony_A_double_prime
+    );
